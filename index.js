@@ -126,6 +126,9 @@ function back() {
     document.getElementById("allStatsButton").style.display = "none"; //sides the buttons on the statistics sidebar
     document.getElementById("myStatsButton").style.display = "none";
 
+    if (cards < 0) {
+        cards = 0;
+    }
     document.getElementById("cardsremaining").innerHTML = cards + " Cards Remaining"; //display the correct amount of cards remaining
     
 
