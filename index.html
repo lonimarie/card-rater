@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="index.css">
+            <script src="index.js"></script>
+    </head>
+    <body>
+
+        <div class="layout">
+
+            <!--Main title at top -->
+            <h1 class="title">CARD RATER</h1>
+
+            <!--Main side bar when page first loads -->
+            <div id="mainSideBar" class="sidebar">
+                <img src="card-back.png" alt="backcard">
+                <h2 id="cardsremaining"> 52 Cards Remaining</h2>
+                <div class="mystatsFormat">
+                    <a onclick="loadMyStats()" class="mystats">My Stats</a>
+                </div>
+                <br>
+                <div class="mystatsFormat">
+                    <a class="allstats" onclick="loadAllStats()">All Stats</a>
+                </div>
+
+            </div>
+
+            <!--Main display when page loads -->
+            <div id="main" class="main">
+                <div class="card-section">
+                <div class="card">
+                    <h1 class="black" id="cardvalue">
+                        K ♣
+                    </h1>
+                </div>
+                </div>
+                
+                <div class="rate-buttons">
+                    <input id="like" class="like" type="image" src="thumbs-up.png" />
+                    <input id="dislike" class="dislike" type="image" src="thumbs-down.png" />
+                
+                </div>
+                <br>
+            </div>
+
+            <!--Side bar for stats, set visible when game ends -->
+            <div id="statsSideBar" class="statsSidebar" style="display:none">
+
+                    <a class="back" onclick="back()">&lt Back</a>
+
+                    <div class="statsSidebarFormat">
+                            <a id="myStatsButton" onclick="loadMyStats()"class="statsButton">My Stats</a>
+                            <a id="allStatsButton" onclick="loadAllStats()"class="allstatsButton" style="display:none">All Stats</a>
+                    </div>
+    
+            </div>
+
+
+            <!--Display of all stats. Set visible at any point when "all stats" is selected -->
+            <div id="right-container" class="right-container" style="display:none">
+                    <h4>All Stats</h4>
+                    <br><br>
+
+                    <h2>% Cards Rated Thumbs Up</h2>
+                    <br>
+                    <hr>
+                    <br>
+                    <h2 id="percentLiked" style="color:#05b519">0%</h2>
+                    <br><br><br>
+                    <h2>Favorite Card</h2>
+                    
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="card-section">
+                            <div class="finalCard">
+                                    <h3 class="black" id="cardvalue2">
+                                        K ♣
+                                    </h3>
+                            </div>
+                    </div>
+                    <h2 id="favoriteCard" style="color:#05b519">0% thumbs up</h2>
+                    <br>
+            </div>
+
+
+            <!--Display of my stats. Set visible at any point when "my stats" is selected -->
+            <div id="myStats" class="right-container" style="display:none">
+                        <h4>My Stats</h4>
+                        <br>
+                        <h2>% Cards Rated Thumbs Up</h2>
+                        <br>
+                        <hr>
+                        <br>
+                        <h2 id="myPercentLiked" style="color:#05b519">0%</h2>
+                        <br>
+                        <h2>% Cards Rated Thumbs Down</h2>
+                        <br>
+                        <hr>
+                        <br>
+                        <h2 id="percentDisliked" style="color:#05b519">0%</h2>
+                        <br>
+                        <h2>First Card Favorited</h2>
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="card-section">
+                            <div class="finalCard">
+                                    <h3 class="black" id="firstLikedCard">
+                                        K ♣
+                                    </h3>
+                            </div>
+                    </div>
+                        
+            </div>
+
+
+
+        </div>
+
+
+
+    </body>
+
+
+
+
+</html>

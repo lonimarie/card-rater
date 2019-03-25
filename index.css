@@ -1,0 +1,244 @@
+* { margin: 0; padding: 0; }
+
+
+/*Layout of the entire page, limiting it's size. This allows right and left side to shrink when page resizes*/
+.layout {
+    width: 1000px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-width: 5px;
+    border-color: #343c49;
+}
+
+/*Main title "Card Rater */
+.title {
+    background-color: #343c49;
+    color: white;
+    height: 90px;
+    padding-top: 45px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+/*Side bar of the main default page that displays the back of the card and stats buttons */
+.sidebar {
+    background-color: #e5e5e5;
+    width: 260px;
+    float: left;
+    padding-top: 75px;
+    padding-bottom: 65px;;
+    padding-left: 50px;
+    overflow: hidden;
+
+}
+
+
+/*All stats button on main page */
+.allstats {
+    font-size: 18px;
+    background-color: white;
+    color: #343c49;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #343c49;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration:none;
+
+}
+
+
+/*Side bar when "my stats" or "all stats" is clicked. Displays back button */
+.statsSidebar {
+    background-color: #e5e5e5;
+    width: 260px;
+    float: left;
+    padding-top: 75px;
+    padding-bottom: 40px;;
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+/*Back button on the stats sidebar */
+.back {
+    font-size: 25px;
+    padding-bottom: 30px;
+    background-color: transparent;
+    color: #343c49;
+    border: none;
+    font-weight: bold;
+    text-decoration:none;
+
+}
+
+/*My stats button on main sidebar and stats sidebar*/
+.statsButton {
+    font-size: 18px;
+    background-color: #343c49;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 65px;
+    padding-right: 10px;
+    text-decoration:none;
+    margin-right: 50px;
+    
+}
+
+/*All stats button viewed on sidebar of my stats */
+.allstatsButton {
+    font-size: 18px;
+    background-color: #343c49;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 65px;
+    padding-right: 10px;
+    text-decoration:none;
+    margin-right: 50px;
+    margin-bottom: 10px; 
+}
+
+/*Div with statistics on user */
+.mystats {
+    font-size: 18px;
+    background-color: #343c49;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration:none;
+}
+
+/*Card displayed on main page for rating */
+.card {
+    height: 370px;
+    width: 250px;
+    display: flex;
+    
+    align-items: center;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    float: right;
+    margin-right: 25%;
+    margin-top: 5%;
+  }
+
+  /*Header of card on main page */
+  .card h1 { 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Class is set when a heart or diamond card is used */
+  .red { 
+      color: red; 
+    }
+
+  /*Class is set when a spade or club card is used */
+  .black {
+      color: black;
+  }
+
+  /*Like button on main page */
+  .like {
+      margin-top: 30px;
+      margin-left: 135px;
+      width: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      background-color: #a9ef9b;
+      border-top: 3px solid #05b519;
+      border-bottom: 3px solid #05b519;
+      border-left: 3px solid #05b519;
+      border-right: 3px solid #05b519;
+      border-radius: 40px;
+      -moz-border-radius: 30px;
+  }
+
+  /*dislike button on main page */
+  .dislike {
+      margin-left: 5px;
+      background-color: #f97575;
+      width: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      border-top: 3px solid #cc0502;
+      border-bottom: 3px solid #cc0502;
+      border-left: 3px solid #cc0502;
+      border-right: 3px solid #cc0502;
+      border-radius: 40px;
+      -moz-border-radius: 30px;
+  }
+
+  /*My stats button on the main page */
+  .mystatsFormat {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+  /*Sidebar when viewing all stats or my stats */
+  .statsSidebarFormat {
+      margin-left: 15px;
+      margin-top: 400px;
+  }
+
+  .right-container {
+    margin-top: 30px;
+    margin-left: 375px;
+  }
+
+  /*div displaying all stats  */
+  .finalCard {
+    height: 200px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+/*The following are formats for various headers */
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    color: #343c49;
+}
+h3 {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+h4 {
+    font-size: 30pt;
+    color: #343c49;
+}
