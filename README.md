@@ -1,2 +1,4 @@
 # card-rater
-UI of a card rater
+User interface displaying a deck of cards where the user can rate a card with a "thumbs up" or a "thumbs down". When the user rates the card, the computer "simulates" four additional user that randomly rate that card as well. You can view statistics at any point during the game and return to your same spot. "My stats" consists of how many cards the user rated thumbs up, how many the user rated thumbs down, and the first card that the user rated thumbs up as well. "All stats" consists of the percent of cards that were rated with more favorites then dislikes, and the card that had the most favorites. Refresh page to restart the game.
+
+There's nothing special that needs to be downloaded to run this. Clone the repo and open index.html, everything will work from there. Project just consists of an html file, css file, and javascript file. No frameworks were used. 
