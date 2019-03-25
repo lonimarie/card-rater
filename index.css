@@ -4,7 +4,7 @@
 /*Layout of the entire page, limiting it's size. This allows right and left side to shrink when page resizes*/
 .layout {
     width: 1000px;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-right: 15%;
     background-color: white;
     border-style: solid;
