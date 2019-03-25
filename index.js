@@ -79,6 +79,7 @@ function loadAllStats() {
             document.getElementById("cardvalue2").className = maxCard.Color; //setting up the color, value and percent that it was liked in max card
             document.getElementById("cardvalue2").innerHTML = maxCard.Value;
             var percentLiked = (totalLiked / 52) * 100;
+            percentLiked = percentLiked.toFixed(2);
             document.getElementById("percentLiked").innerHTML = percentLiked + "%";
 
         }
@@ -98,10 +99,13 @@ function loadMyStats() {
         document.getElementById("allStatsButton").style.display = "block"; //switch from "my stats" to "all stats" button
         document.getElementById("myStatsButton").style.display = "none";
 
-        var percentLiked = (myLikes / 52) * 100; //calculate and display the percent of liked cards        
-        document.getElementById("myPercentLiked").innerHTML = percentLiked +"%";
+        var percentLiked = (myLikes / 52) * 100; //calculate and display the percent of liked cards  
+         var pLiked = percentLiked.toFixed(2);      
+        document.getElementById("myPercentLiked").innerHTML = pLiked +"%";
+
 
         var percentDisliked = (myDislikes / 52) * 100; //calculate and display the percent of disliked cards
+        percentDisliked = percentDisliked.toFixed(2);  
         document.getElementById("percentDisliked").innerHTML = percentDisliked +"%";
 
         document.getElementById("firstLikedCard").className = firstLikedCard.Color; //set the display of the first liked card
